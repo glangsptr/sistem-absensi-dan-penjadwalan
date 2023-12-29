@@ -12,17 +12,37 @@
         <a href="index3.html" class="nav-link">Home</a>
       </li>
     </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Dropdown - User Information -->
+        <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-user"></i>
+                <span class="ml-2"><?=$username;?></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <div class="dropdown-divider"></div>
+                <a href="<?=base_url('login/logout');?>" class="dropdown-item" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </li>
+    </ul>
+
+
+
   </nav>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 text">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="<?= base_url('assets/template/') ?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin</span>
+    <a href="" class="brand-link">
+      <span class="brand-text font-weight-light" >Admin</span>
     </a>
+
+
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -33,7 +53,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
                 <a href="<?= base_url('Dashboard')?>" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <i class="nav-icon fas fa-home"></i>
                   <p>Dashboard</p>
                 </a>
           </li>
@@ -44,32 +64,32 @@
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('Guru')?>" class="nav-link">
                   <i class="nav-icon fas fa-user"></i>
                   <p>Guru</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i>
+                <a href="<?= base_url('Kelas')?>" class="nav-link">
+                  <i class="nav-icon fas fa-house-user"></i>
                   <p>Kelas</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i>
+                <a href="<?= base_url('Mapel')?>" class="nav-link">
+                  <i class="nav-icon fas fa-sticky-note"></i>
                   <p>Mata Pelajaran</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i>
+                <a href="<?= base_url('Jadwal')?>" class="nav-link">
+                  <i class="nav-icon fas fa-calendar-alt"></i>
                   <p>Atur Jadwal</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i>
+                <a href="<?= base_url('Absensi')?>" class="nav-link">
+                  <i class="nav-icon fas fa-folder"></i>
                   <p>Rekap Absensi</p>
                 </a>
           </li>

@@ -5,20 +5,15 @@
 		<?= form_error('nama_siswa', '<div class="text-small text-danger">', '</div'); ?>		
 	</div>
 	<div class="form-group">
-		<label>NIS</label>
-		<input type="text" name="id_siswa" class="form-control">
-		<?= form_error('id_siswa', '<div class="text-small text-danger">', '</div'); ?>		
-	</div>	
-	<div class="form-group">
 		<label>Kelas</label>
-		<input type="text" name="id_kelas" class="form-control">
-		<?= form_error('id_kelas', '<div class="text-small text-danger">', '</div'); ?>		
+		<input type="text" name="kelas_siswa" class="form-control">
+		<?= form_error('kelas_siswa', '<div class="text-small text-danger">', '</div'); ?>		
 	</div>	
 	<div class="form-group">
 		<label>Alamat</label>
-		<textarea name="alamat" class="form-control"></textarea>
-		<?= form_error('alamat', '<div class="text-small text-danger">', '</div'); ?>		
+		<textarea name="alamat_siswa" class="form-control"></textarea>
+		<?= form_error('alamat_siswa', '<div class="text-small text-danger">', '</div'); ?>		
 	</div>
-	<button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-save"></i>Simpan</button>
-	<button type="reset" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>Reset</button>		
+	<button type="submit" class="btn btn-primary btn-sm"><i></i>Simpan</button>
+	<button type="reset" class="btn btn-danger btn-sm"><i></i>Reset</button>		
 </form>
